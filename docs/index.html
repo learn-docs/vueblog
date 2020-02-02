@@ -17,7 +17,7 @@
       }
   
       .custom_nav.active {
-        width: calc(100% - 300px);
+        width: calc(100% - 0px);
         background-color: #fff;
         height: 64px;
         border-bottom: 1px solid #eee;
@@ -127,7 +127,7 @@
     </style>
 </head>
 <body>
-    <h1 style="color: transparent; height: 0; padding:0; margin:0">达达前端</h1>
+    <!-- <h1 style="color: transparent; height: 0; padding:0; margin:0">达达前端</h1> -->
     <!-- 通过配置文件自定义导航 -->
     <nav class="custom_nav active">
       <a href="#/">主页</a>
@@ -254,7 +254,9 @@
     </script>
     <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
     <script>
         const gitalk = new Gitalk({
           clientID: 'f7767ef8db9a46361911',
@@ -265,9 +267,7 @@
           distractionFreeMode: false
         })
     </script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+    
     <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
     
     <!-- 项目本地运行:  docsify serve docs -->
