@@ -17,7 +17,7 @@
       }
   
       .custom_nav.active {
-        width: calc(100% - 0px);
+        width: calc(100% - 300px);
         background-color: #fff;
         height: 64px;
         border-bottom: 1px solid #eee;
@@ -252,11 +252,13 @@
         // ]
       }
     </script>
-    <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
         const gitalk = new Gitalk({
           clientID: 'f7767ef8db9a46361911',
@@ -267,9 +269,6 @@
           distractionFreeMode: false
         })
     </script>
-    
-    <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
-    
     <!-- 项目本地运行:  docsify serve docs -->
 </body>
 </html>
