@@ -1,5 +1,6 @@
 <!-- 封面页 -->
-![logo](/_media/hero.png)
+![达达前端](https://cdn.jsdelivr.net/gh/webVueBlog/dadapic/img/hero.png)
+
 <!-- # 达达前端 -->
 
 ## 我的文档网站
