@@ -18,7 +18,6 @@
     * [html5+css3][立方体](/前端交流/2-html5+css3/5-立方体.md)
     * [html5+css3][过渡](/前端交流/2-html5+css3/6-过渡.md)
     * [html5+css3][弹性盒子](/前端交流/2-html5+css3/7-弹性盒子.md)
-    * [html5+css3][自定义字体](/前端交流/2-html5+css3/8-自定义字体.md)
 
 * javascript目录
     * [javascript][数据类型转换](/前端交流/3-javascript/1-数据类型转换.md)

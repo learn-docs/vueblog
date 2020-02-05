@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  <!-- <script src="//unpkg.com/vue"></script> -->
+  <!-- <script src="//unpkg.com/docsify"></script> -->
   <style>
       .app-nav.custom_nav {
         position: fixed;
@@ -197,8 +199,11 @@
       //   distractionFreeMode: false
       // }
       window.$docsify = {
+        // logo: '/_media/gen.svg', // 在侧边栏中出现的网站图标
         name: '达达前端', // 侧边导航名字
         repo: 'https://github.com/huangguangda',
+        executeScript: true, // 执行文档里的 sc ript 标签里的脚本
+        auto2top: true,
         loadSidebar: true, // 自定义侧边目录
         loadSidebar: '_sidebar.md', //侧边目录
         subMaxLevel: 2, // 导航最大层级
@@ -206,11 +211,15 @@
         coverpage: true, // 封面
         search: {
           paths: 'auto',
-          placeholder: '输入搜索...',
-          noData: '暂时无搜索结果...',
+          placeholder: '🔍 输入搜索...',
+          noData: '😞 暂时无搜索结果...',
           depth: 6
         },
-  
+        pagination: {
+          previousText: 'PREVIOUS',
+          nextText: 'NEXT',
+          crossChapter: true
+        },
         plugins: [
           function (hook, vm) {
             // 留言
@@ -254,6 +263,7 @@
     </script>
 
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
