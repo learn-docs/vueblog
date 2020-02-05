@@ -9,8 +9,9 @@
     * [数值](/技术文档写作规范/number.md)
     * [标点符号](/技术文档写作规范/marks.md)
     * [文档体系](/技术文档写作规范/structure.md)
+    * [markdown](/技术文档写作规范/markdown.md)
 
-* JavaScript系列一
+<!-- * JavaScript系列一
     * [JS简介](/JavaScript/JavaScript系列一/JS简介.md)
 
 * JavaScript系列二
@@ -31,4 +32,4 @@
 
 * CSS系列
 
-* 面试总结
+* 面试总结 -->

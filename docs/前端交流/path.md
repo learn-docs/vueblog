@@ -64,3 +64,20 @@
     * [mysql][聚合函数](/前端交流/5-mysql/6-聚合函数.md)
 
 ## 高级开发工程师
+
+* vue目录
+    * [vue][vue](/前端交流/6-vue/1-vue.md)
+    * [vue][v-for](/前端交流/6-vue/2-v-for.md)
+    * [vue][vue-key](/前端交流/6-vue/3-vue-key.md)
+    * [vue][v-if](/前端交流/6-vue/4-v-if.md)
+    * [vue][vue指令](/前端交流/6-vue/5-vue指令.md)
+    * [vue][vue事件](/前端交流/6-vue/6-vue事件.md)
+    * [vue][vueComputed](/前端交流/6-vue/7-vueComputed.md)
+    * [vue][vue组件](/前端交流/6-vue/8-vue组件.md)
+    * [vue][vue-动态组件](/前端交流/6-vue/9-vue-动态组件.md)
+    * [vue][vue-生命周期](/前端交流/6-vue/10-vue-生命周期.md)
+    * [vue][vue数据双向绑定](/前端交流/6-vue/11-vue数据双向绑定.md)
+    * [vue][vue-cli](/前端交流/6-vue/12-vue-cli.md)
+    * [vue][vue路由](/前端交流/6-vue/13-vue路由.md)
+    * [vue][axios](/前端交流/6-vue/14-axios.md)
+    * [vue][vuex](/前端交流/6-vue/15-vuex.md)

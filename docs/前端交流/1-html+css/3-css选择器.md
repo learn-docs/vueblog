@@ -35,7 +35,7 @@
 	background:#ff0000 url(bg01.jpg) no-repeat fixed center
 
 
-## 考点：
+## 重点：
 
 1. link和@import的区别（无样式闪烁问题FOUC）
     
