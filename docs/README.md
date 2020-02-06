@@ -1,5 +1,7 @@
 # 【达达前端】
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=126 src="//music.163.com/outchain/player?type=2&id=1387585335&auto=1&height=66"></iframe>
+
 > 这里是 达达前端 的博客, 囊括前端Vue、JavaScript、数据结构与算法、实战演练、Node全栈一线技术，紧跟业界发展步伐，一个热爱前端的达达程序员。
 
 **加入我们**
