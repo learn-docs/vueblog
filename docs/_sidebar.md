@@ -20,7 +20,10 @@
     * [uni-app跨端开发注意事项](/uni-app介绍/uni-app跨端开发注意事项.md)
     * [高效开发技巧](/uni-app介绍/高效开发技巧.md)
     * [性能优化建议](/uni-app介绍/性能优化建议.md)
-    
+
+* 书籍推荐
+    * [JavaScript系列](/书籍推荐/JavaScript系列.md)
+
 <!-- * JavaScript系列一
     * [JS简介](/JavaScript/JavaScript系列一/JS简介.md)
 
