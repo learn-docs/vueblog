@@ -1,5 +1,7 @@
 # 【达达前端】
 
+本文档是作者学习 前端开发 以来的学习历程，旨在为大家提供一个较详细的学习笔记，侧重点更倾向于 深入的前端领域 所涉及的技术栈，如果本文能为您得到帮助，请给予支持！
+
 > 这里是 达达前端 的博客, 囊括前端Vue、JavaScript、数据结构与算法、实战演练、Node全栈一线技术，紧跟业界发展步伐，一个热爱前端的达达程序员。
 
 <iframe frameborder="no" width=200 height=126 src="//music.163.com/outchain/player?type=2&id=1387585335&auto=0&height=66"></iframe>
