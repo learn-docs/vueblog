@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   <!-- <script src="//unpkg.com/vue"></script> -->
-  <!-- <script src="//unpkg.com/docsify"></script> -->
+  <script src="//unpkg.com/docsify"></script>
   <style>
       .app-nav.custom_nav {
         position: fixed;
@@ -134,6 +134,7 @@
     <nav class="custom_nav active">
       <a href="#/">主页</a>
       <a href="#/前端交流/path">前端交流</a>
+      <a href="#/吊打前端专栏/path">吊打前端专栏</a>
       <!-- <a href="#/面试问题/path">面试问题</a> -->
       <a href="#/关于我">关于我</a>
     </nav>
@@ -174,6 +175,11 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(mta, s);
       })();
+    </script>
+    <script>
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
+      }
     </script>
   
     <script>
@@ -264,14 +270,13 @@
         // ]
       }
     </script>
-
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
         const gitalk = new Gitalk({
           clientID: 'f7767ef8db9a46361911',

@@ -20,6 +20,21 @@
     * [uni-app跨端开发注意事项](/uni-app介绍/uni-app跨端开发注意事项.md)
     * [高效开发技巧](/uni-app介绍/高效开发技巧.md)
     * [性能优化建议](/uni-app介绍/性能优化建议.md)
+    * [使用git把本地代码上传到github](/uni-app介绍/使用git把本地代码上传到github.md)
+
+* uni-app框架
+    * [pages.json详解](/uni-app框架/pages.json详解.md)
+    * [manifest.json详解](/uni-app框架/manifest.json详解.md)
+    * [package.json详解](/uni-app框架/package.json详解.md)
+    * [vue.config.js详解](/uni-app框架/vue.config.js详解.md)
+    * [uni.scss详解](/uni-app框架/uni.scss详解.md)
+    * [App.vue详解](/uni-app框架/App.vue详解.md)
+    * [main.js详解](/uni-app框架/main.js详解.md)
+    * [日志打印](/uni-app框架/日志打印.md)
+    * [定时器](/uni-app框架/定时器.md)
+    * [生命周期](/uni-app框架/生命周期.md)
+    * [页面](/uni-app框架/页面.md)
+    * [页面通讯](/uni-app框架/页面通讯.md)
 
 * 书籍推荐
     * [JavaScript系列](/书籍推荐/JavaScript系列.md)
