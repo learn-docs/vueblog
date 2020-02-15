@@ -36,6 +36,9 @@
     * [页面](/uni-app框架/页面.md)
     * [页面通讯](/uni-app框架/页面通讯.md)
 
+* 浏览器工具
+    * [ModHeader：chrome http请求头编辑插件](/浏览器工具/ModHeader-chrome-http请求头编辑插件.md)
+
 * 书籍推荐
     * [JavaScript系列](/书籍推荐/JavaScript系列.md)
 
