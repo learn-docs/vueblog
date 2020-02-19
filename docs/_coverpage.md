@@ -12,7 +12,7 @@
 
 [CSDN](https://blog.csdn.net/qq_36232611)
 [掘金](https://juejin.im/user/5a16e1f3f265da43128096cb)
-[三千老祖](https://juejin.im/user/5e477d7ce51d4526c550a27d)
+[魔王哪吒](https://juejin.im/user/5e477d7ce51d4526c550a27d)
 [思否](https://segmentfault.com/u/dashucoding)
 [简书](https://www.jianshu.com/u/c785ece603d1)
 [GitHub](https://github.com/huangguangda)
