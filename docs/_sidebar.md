@@ -39,6 +39,10 @@
 * 浏览器工具
     * [ModHeader：chrome http请求头编辑插件](/浏览器工具/ModHeader-chrome-http请求头编辑插件.md)
 
+* 技能标准
+    * [web前端中级](/技能标准/web前端中级.md)
+    * [web前端高级](/技能标准/web前端高级.md)
+
 * 书籍推荐
     * [JavaScript系列](/书籍推荐/JavaScript系列.md)
 
