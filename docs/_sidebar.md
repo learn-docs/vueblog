@@ -46,25 +46,29 @@
 * 书籍推荐
     * [JavaScript系列](/书籍推荐/JavaScript系列.md)
 
-<!-- * JavaScript系列一
-    * [JS简介](/JavaScript/JavaScript系列一/JS简介.md)
+* Web页面制作基础
 
-* JavaScript系列二
+* HTML5开发基础与应用
 
-* TCP/IP系列
+* JavaScript程序设计
 
-* Docker系列
+* 轻量级前端框架
 
-* MySQL系列一
+* MySQL数据库基础与应用
 
-* MySQL系列二
+* PHP技术与应用
 
-* 数据结构系列
+* Web前后端数据交互技术
 
-* vue全家桶系列
+* 响应式开发技术
 
-* HTML系列
+* 网站项目实战
 
-* CSS系列
+* 前端高效开发框架技术与应用
 
-* 面试总结 -->
+* 性能优化与自动化技术
+
+* 移动Web设计与开发
+
+* 友情链接
+    * [友链](/友情链接/友链.md)
