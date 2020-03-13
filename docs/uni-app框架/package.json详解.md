@@ -1,4 +1,4 @@
-`package.json`扩展配置用法
+## `package.json`扩展配置用法
 
 代码：
 

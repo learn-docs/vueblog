@@ -1,4 +1,4 @@
-`manifest.json`文件
+## `manifest.json`文件
 
 > 配置项列表
 

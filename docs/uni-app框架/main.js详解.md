@@ -1,4 +1,4 @@
-`main.js`是`uni-app`的入口文件。
+> `main.js`是`uni-app`的入口文件。
 
 作用于初始化`vue`实例，定义全局组件。
 

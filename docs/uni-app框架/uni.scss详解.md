@@ -1,4 +1,4 @@
-`uni.scss`文件用于控制应用的风格，`uni.scss`文件里预置一批`scss`变量预置。
+> `uni.scss`文件用于控制应用的风格，`uni.scss`文件里预置一批`scss`变量预置。
 
 如果使用`scss`，需要在 `style` 节点上加上 `lang="scss"`。
 

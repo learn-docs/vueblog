@@ -9,7 +9,9 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-  <!-- <script src="//unpkg.com/vue"></script> -->
+  <link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
   <script src="//unpkg.com/docsify"></script>
   <style>
       .app-nav.custom_nav {
@@ -218,6 +220,19 @@
         subMaxLevel: 2, // 导航最大层级
         auto2top: true, // 切换页面后自动跳转到页面顶部
         coverpage: true, // 封面
+        themeColor: "#42b983",
+        darkMode: {
+        dark: {
+          background: "#1c2022",
+          toggleBtnBg: "#34495e",
+          textColor: "#b4b4b4"
+          },
+          light: {
+            background: "white",
+            toggleBtnBg: "var(--theme-color)",
+            textColor: "var(--theme-color)"
+          }
+        },
         search: {
           paths: 'auto',
           placeholder: '🔍 输入搜索...',
@@ -229,32 +244,24 @@
           nextText: 'NEXT',
           crossChapter: true
         },
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
         plugins: [
           function (hook, vm) {
-            // 留言
-            // hook.doneEach(function () {
-            //   var label, domObj, main, divEle, gitalk;
-            //   label = vm.route.path.split("/").pop();
-            //   domObj = Docsify.dom;
-            //   main = domObj.getNode("#main");
-            //   Array.apply(
-            //     null,
-            //     document.querySelectorAll("div.gitalk-container")
-            //   ).forEach(function (ele) {
-            //     ele.remove();
-            //   });
-            //   divEle = domObj.create("div");
-            //   divEle.id = "gitalk-container-" + label;
-            //   divEle.className = "gitalk-container";
-            //   divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
-            //   domObj.appendTo(domObj.find(".content"), divEle);
-            //   gitalk = new Gitalk(
-            //     Object.assign(gitalkOption, {
-            //       id: !label ? "home" : label
-            //     })
-            //   );
-            //   gitalk.render("gitalk-container-" + label);
-            // })
+            hook.beforeEach(function (html) {
+            if (/githubusercontent\.com/.test(vm.route.file)) {
+              url = vm.route.file
+                .replace('raw.githubusercontent.com', 'github.com')
+                .replace(/\/master/, '/blob/master')
+            } else {
+              url = 'https://github.com/webVueBlog/vueblog/tree/master/docs/' + vm.route.file
+            }
+            var editHtml = '[:memo: Edit Document](' + url + ')\n'
+
+            return editHtml
+              + html
+              + '\n\n----\n\n'
+              + '<a href="https://github.com/webVueBlog/interview-answe" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">前端面试日更解答 interview-answe 1+1</a>'
+          })
   
   
           }
@@ -270,6 +277,7 @@
         // ]
       }
     </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>

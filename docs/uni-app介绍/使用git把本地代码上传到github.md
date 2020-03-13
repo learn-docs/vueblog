@@ -126,7 +126,7 @@ pwd： 显示当前目录的路径。
 
 `git log` 查看历史记录
 
-git reset –hard HEAD^ 或者 git reset –hard HEAD~ 回退到上一个版本
+`git reset –hard HEAD^` 或者 `git reset –hard HEAD~` 回退到上一个版本
 
 > 建立git仓库
 
@@ -145,14 +145,17 @@ git reset –hard HEAD^ 或者 git reset –hard HEAD~ 回退到上一个版本
 `git remote add origin https:// h`
 
 `git pull --rebase origin master`
+
 上传代码到github远程仓库
 
 `git push -u origin master`
 
 语法：`git config –-global user.name ''`
+
 语法：`git config –-global user.email ''`
 
 在本地创建一个文件夹
+
 语法：mkdir
 
 在wandou文件夹下创建文件
