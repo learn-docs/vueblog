@@ -4,6 +4,8 @@
 * [考前复习必备MySQL数据库（关系型数据库管理系统）](https://mp.weixin.qq.com/s/7o4-irgWosLRJ1GLTo3gmw)
 * [长篇总结之JavaScript，巩固前端基础](https://mp.weixin.qq.com/s/lphythZhxUxi1TQiFT6Hpg)
 * [前端必学必会-多媒体-本地存储-浏览器与服务器的交互-通信功能](https://mp.weixin.qq.com/s/cTsaN9kbu9qHk_weaPKkoQ)
+* [记录一次BAT一线互联网公司前端JavaScript面试](https://mp.weixin.qq.com/s/WEiCs4Vlqz5FfkIngOjJzA)
+* [学习总结之HTML5剑指前端-上（建议收藏，图文并茂）](https://mp.weixin.qq.com/s/qsvN-nq5h2DedgWOJTr6eA)
 
 
 ## 如何支持：
