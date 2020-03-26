@@ -156,11 +156,11 @@ d. `http`：`Hyper Text Transfer Protocol`，超文本传输协议，是用于�
 #### `Mouse`鼠标事件
 
 1. `onclick`，当在元素上单击鼠标时触发。
-2. `onblclick`，当在元素上双击鼠标时触发。
+2. `ondblclick`，当在元素上双击鼠标时触发。
 3. `onmousedown`，当在元素上按下鼠标按钮时触发。
-4. `onmousemove`，当鼠标指针移动到元素上时触发。
+4. `onmousemove`，事件会在鼠标指针移动时发生。
 5. `onmouseout`，当鼠标指针移出元素时触发。
-6. `onmouseover`，当鼠标指针移动到元素上时触发。
+6. `onmouseover`，事件会在鼠标指针移动到指定的元素上时发生。
 7. `onmouseup`，当在元素上释放鼠标按钮时触发。
 
 #### Media媒体事件
