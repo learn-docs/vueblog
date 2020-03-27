@@ -526,3 +526,323 @@ HTML 中的预留字符必须被替换为字符实体。
 |÷	|除号|	`&divide;`|	`&#247;`|
 
 ## CSS基础知识
+
+1. `css`，英文`Cascading Style Sheets`，中文名：级联样式表。层叠样式表。
+2. `css`是一种表现语言，是对网页语言的补充。
+3. `css`用于网页的风格设计，包括字体，颜色，位置等。
+4. `css`使用的4中方式：引入外部样式文件，导入外部样式文件，使用内部样式定义，使用内联样式定义。
+
+引入外部样式文件：
+
+```
+<link type="text/css" rel="stylesheet" href="css样式文件的url"/>
+```
+导入外部样式文件:
+
+```
+<style type="text/css">
+ @import "css样式文件的url";
+</style>
+```
+
+使用内部样式定义：
+
+```
+<style type="text/css">
+ div {
+     background-color: #ffffff;
+     width: 300px;
+     height: 300px;
+ }
+</style>
+```
+
+使用内联样式定义：
+
+```
+<div style="background-color: #ffffff; width: 100px; height: 100px;">
+</div>
+```
+
+## css的两个特性：层叠，继承
+
+层叠：层叠样式生效的优先级：
+
+内联样式->内部样式->外部样式->浏览器默认效果。
+
+继承，就是css属性可以从父元素向下传递到子元素。
+
+### `css`的选择器
+
+1. 元素选择器，是最简单的选择器。
+2. 通配符选择器，用`"*"`表示，表示对任意元素都有效。
+3. 属性选择器
+
+格式：
+
+```
+E[attribute]{property1:value1; property2:value2;...}
+```
+
+| 语法 | 说明 |
+| :--- | :--- |
+| `E[attribute]` | 用于选取带有指定属性的元素 |
+| `E[attribute=value]` | 用于选取带有指定属性和指定值的元素 |
+| `E[attribute~=value]` | 用于选取属性值包含指定值的元素，该值必须是整个单词，可以前后有空格 |
+| `E[attribute\|=value]` | 用于选取带有以指定值开头的属性值的元素，该值必须是整个单词或者后面跟着连字符“-” |
+
+### 派生选择器
+
+1. 派生选择器根据元素在其位置的上下文关系定义样式
+2. 派生选择器分3种：后代选择器，子元素选择器，相邻兄弟选择器
+3. 后代选择器是某元素后代的所有元素。
+4. 子元素选择器是相对于父元素的第一级子元素符合条件。
+5. 相邻兄弟选择器，针对的元素是同级元素，拥有相同的父元素，且两个元素是相邻的。
+
+6. `id`选择器，以特定`id`值的HTML元素指定样式。
+7. 类选择器，以指定`class`的HTML元素指定样式。
+8. 伪类选择器
+
+> 伪类选择器：伪类选择器和伪元素选择器
+
+伪类以冒号`(:)`开头，元素选择符和冒号之间不能有空格，伪类名中间也不能有空格。
+
+`css`中常用的伪类如下表所示：
+
+| 伪类名 | 说明 |
+| :--- | :--- |
+| `:active` | 向被激活的元素添加样式 |
+| `:focus` | 向拥有输入焦点的元素添加样式 |
+| `:hover` | 向鼠标悬停在上方的元素添加样式 |
+| `:link` | 向未被访问的链接添加样式 |
+| `:visited` | 向已被访问的链接添加样式 |
+| `:first-child` | 向元素添加样式，且该元素是它的父元素的第一个子元素 |
+| `:lang` | 向带有指定`lang`属性的元素添加样式 |
+
+伪元素选择器
+
+`css`中常用的伪元素如下表所示：
+
+| 伪元素名 | 说明 |
+| :--- | :--- |
+| `:first-letter` | 向文本的第一个字母添加样式 |
+| `:first-line` | 向文本的第一行添加样式 |
+| `:after` | 在元素之后添加内容 |
+| `:before` | 在元素之前添加内容 |
+
+### css背景
+
+`css`背景属性如下：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `background-color` | 定义背景颜色 |
+| `background-image` | 定义背景图片 |
+| `background-repeat` | 定义背景图片是否重复以及其重复方式 |
+| `background-attachment` | 定义背景图片是否跟随内容滚动 |
+| `background-position` | 定义背景图片的水平位置和垂直位置 |
+| `background` | 可以用一条样式定义各种背景属性 |
+
+#### background
+
+1. `background-color`用于设置背景颜色，初始值为`transparent`透明色。
+2. 颜色取值3种如：颜色名，十六进制颜色，rgb函数。
+3. `background-image`用于设置元素的背景图片，默认值为`none`。
+4. `background-repeat`控制图像的平铺。
+
+> `background-repeat`默认值为`repeat`，即图像沿着x轴和y轴平铺，还可以指定沿着x轴平铺`rpeat-x`，沿着y轴平铺`repeat-y`，或者不平铺`no-repeat`，继承父元素该属性设置`inherit`。
+
+5. `background-attachment`用于设置背景图像是否固定或者随着页面的其余部分滚动。默认值为：`scroll`，表示可以随着页面其余部分的滚动而滚动。设置`fixed`，表示当页面其余部分滚动时，背景图片不会滚动，设置`inherit`，继承父元素。
+6. `background-position`用于设置背景图像圆点的位置。
+
+> `background`可以将`background-color`，`background-position`，`background-attachment`，`background-repeat`，`background-image`全部设置。
+
+### css字体属性
+
+`css`常用字体属性表：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `font-family` | 定义文本的字体系列 |
+| `font-size` | 定义文本的字体尺寸 |
+| `font-variant` | 定义是否以小型大写字母的字体显示文本 |
+| `font-style` | 定义文本的字体是否是斜体 |
+| `font-weight` | 定义字体的粗细 |
+| `font` | 可以一条样式定义各种字体属性 |
+
+1. `font-family`用于设置元素的字体，该元素属性值一般可以设置多个字体。
+2. `font-size`用于设置字体的尺寸。
+3. `font-style`用于设置字体是否是斜体，默认值为`normal`，当设置为`italic`，显示为一个斜体的样式，当设置为`oblique`，显示为一个倾斜的样式。
+4. `font-variant`用于设置字体使用小写字体，默认为`normal`，一旦设置为`small-caps`，将所有小写字母变为大写。
+5. `font-weight`用于设置字体的粗细，`normal`值等于400，`bold`的值等于700。
+6. `font`，可以设置`font-family,font-size,font-style,font-variant,font-weight`。
+
+`css`文本属性表：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `color` | 文本颜色 |
+| `direction` | 文本方向或者书写方向 |
+| `letter-spacing` | 字符的间距 |
+| `line-height` | 文本的行高 |
+| `text-align` | 文本的水平对齐方式属性,设置元素中文本的水平方式，值有`left，right，center，inherit`。 |
+| `text-decoration` | 给文本添加修饰效果，值有`underline为添加下画线，overline添加上画线，line-through添加删除线，blink添加闪烁的效果,none无如何修饰,inherit`。 |
+| `text-indent` | 定义文本的首行缩进方式，默认值为0 |
+| `text-shadow` | 为文本添加阴影效果 |
+| `text-transform` | 切换文本的大小写 |
+| `white-space` | 设置如何处理元素内的空白 |
+| `word-spacing` | 定义单词之间的距离 |
+
+`css`尺寸属性表：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `width` | 设置元素的宽度 |
+| `min-width` | 设置元素的最小宽度 |
+| `max-width` | 设置元素的最大宽度 |
+| `height` | 设置元素的高度 |
+| `min-height` | 设置元素的最小高度 |
+| `max-height` | 设置元素的最大高度 |
+
+`css`列表属性表：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `list-style-image` | 设置列表项标记样式为图像，`none/inherit/url` |
+| `list-style-position` | 设置列表项标记的位置，`inside/outside/inherit` |
+| `list-style-type` | 设置列表项标记的类型 |
+| `list-style` | 可以用一条样式定义各种列表属性 |
+
+`list-style-type`
+
+| 值 | 说明 |
+| :--- | :--- |
+| `disc` | 实心圆 |
+| `circle` | 空心圆 |
+| `square` | 方块 |
+| `decimal` | 数字 |
+| `low-roman` | 小写罗马数字 |
+| `upper-roman` | 大写罗马数字 |
+| `low-alpha` | 小写字母 |
+| `upper-alpha` | 大写字母 |
+| `none` | 无标记 |
+| `inherit` | 继承父元素的该设置 |
+
+`css`表格属性表：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `border-collapse` | 设置是否合并表格边框 |
+| `border-spacing` | 设置相邻单元格边框之间的距离 |
+| `caption-side` | 设置表格标题的位置 |
+| `empty-cells` | 设置是否显示表格中空单元格上的边框和背景 |
+| `table-layout` | 设置用于表格单元格列宽的设置方式 |
+
+### 盒模型
+
+1. `css`盒模型，包含元素内容`content`，内边距`padding`，边框`border`，外部距`margin`。
+
+`css`内边距属性，元素的内边距在边框和内容之间。
+
+`css`内边距的属性：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `padding-top` | 元素的上内边距 |
+| `padding-right` | 元素的右内边距 |
+| `padding-bottom` | 元素的下内边距 |
+| `padding-left` | 元素的左内边距 |
+| `padding` | 用一个声明定义所有内边距属性 |
+
+设置顺序为上右下左依次进行。
+
+```
+padding: 10px 10px 10px 10px;
+```
+
+`css`外边距的属性：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `margin-top` | 定义元素的上外边距 |
+| `margin-right` | 定义元素的右外边距 |
+| `margin-bottom` | 定义元素的下外边距 |
+| `margin-left` | 定义元素的左外边距 |
+| `margin` | 用一个声明定义所有外边距属性 |
+
+
+`css`边框的属性：
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `border-top-style` | 上边框的样式属性 |
+| `border-right-style` | 右边框的样式属性 |
+| `border-bottom-style` | 下边框的样式属性 |
+| `border-left-style` | 左边框的样式属性 |
+| `border-style` | 设置4条边框的样式属性 |
+| `border-top-width` | 设置上边框的宽度属性 |
+| `border-right-width` | 设置右边框的宽度属性 |
+| `border-bottom-width` | 设置下边框的宽度属性 |
+| `border-left-width` | 设置下边框的宽度属性 |
+| `border-width` | 设置4条边框的宽度属性 |
+| `border-top-color` | 设置上边框的颜色属性 |
+| `border-right-color` | 设置右边框的颜色属性 |
+| `border-bottom-color` | 设置下边框的颜色属性 |
+| `border-left-color` | 设置左边框的颜色属性 |
+| `border-color` | 设置4条边框的颜色属性 |
+| `border-top` | 用一条声明定义所有上边框的属性 |
+| `border-right` | 用一条声明定义所有右边框的属性 |
+| `border-bottom` | 用一条声明定义所有下边框的属性 |
+| `border-left` | 用一条声明定义所有左边框的属性 |
+| `border` | 用一条声明定义所有边框的属性 |
+| `border-width` | 一次定义4条边框的宽度 |
+| `border-color` | 一次定义4条边框的颜色 |
+
+边框的样式
+
+1. `none`，无边框效果
+2. `hidden`，与`none`相同
+3. `dotted`，点线边框效果
+4. `dashed`，虚线边框效果
+5. `double`，双线边框效果
+6. `solid`，实线边框效果
+7. `groove`，3D凹槽边框效果
+8. `ridge`，3D凸槽边框效果
+
+`css`轮廓是绘制在元素周围的一条线，位于边框边缘的外围，起到突出元素的作用。
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `outline-style` | 定义轮廓的样式属性 |
+| `outline-color` | 定义轮廓的颜色属性 |
+| `outline-width` | 定义轮廓的宽度属性 |
+| `outline` | 同一个声明中定义所有的轮廓属性 |
+
+### 布局属性
+
+1. 布局属性是文档中元素排列显示的规则
+2. 布局方式3种：普通文档流，浮动，定位
+
+`css`浮动涉及到的属性
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `float` | 设置框是否需要浮动以及浮动方向 |
+| `clear` | 设置元素的哪一侧不允许出现其他浮动元素 |
+| `clip` | 裁剪绝对定位元素，该元素必须是绝对定位，上右下左原则 |
+| `overflow` | 设置内容溢出元素框时的处理方式，值：`visible,auto,hidden,scroll` |
+| `display` | 设置元素如何显示，值`none,block,inline,inline-block,inherit` |
+| `visibility` | 定义元素是否可见，`visibility`设置为隐藏，元素占用的空间依然会保留，但`display:none`不保留占用空间，值：`visible,hidden` |
+
+`css`定位的属性
+
+| 属性 | 说明 |
+| :--- | :--- |
+| `position` | 元素的定位类型，值`static`,`absolute`绝对，`relative`相对 |
+| `top` | 元素上外边距 |
+| `right` | 元素右外边距 |
+| `bottom` | 元素下外边距 |
+| `left` | 元素的左外边距 |
+| `z-index` | 元素的堆叠顺序 |
+
+> `z-index`用于设置目标对象的定位层序，数值越大，所在层级越高。该属性只在`position:absolute`时有效。
