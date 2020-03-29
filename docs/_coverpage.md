@@ -14,7 +14,9 @@
 [魔王哪吒](https://juejin.im/user/5e477d7ce51d4526c550a27d)
 [思否](https://segmentfault.com/u/dashucoding)
 [简书](https://www.jianshu.com/u/c785ece603d1)
-[GitHub](https://github.com/huangguangda)
+[云+社区](https://cloud.tencent.com/developer/user/1435798)
+[达达GitHub](https://github.com/huangguangda)
+[GitHub](https://github.com/webVueBlog)
 [开始阅读](/README.md)
 
 <!-- 背景色 -->
