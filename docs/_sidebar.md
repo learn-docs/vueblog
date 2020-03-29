@@ -55,7 +55,7 @@
 
 * 前端复盘课
     * [Web页面制作基础](/前端复盘课/Web页面制作基础.md)
-    * [JavaScript程序设计](/前端复盘课/JavaScript程序设计.md)
+    * [巩固JavaScript知识体系](/前端复盘课/JavaScript程序设计.md)
     * [HTML5和CSS3开发基础与应用](/前端复盘课/HTML5和CSS3开发基础与应用.md)
     * [轻量级前端框架](/前端复盘课/轻量级前端框架.md)
 
