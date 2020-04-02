@@ -1,11 +1,15 @@
 ## 前端高校
 
 * [前端面试必备ES6全方位总结](https://mp.weixin.qq.com/s/68iG9LWXKzp7x4wyy5McJA)
-* [考前复习必备MySQL数据库（关系型数据库管理系统）](https://mp.weixin.qq.com/s/7o4-irgWosLRJ1GLTo3gmw)
-* [长篇总结之JavaScript，巩固前端基础](https://mp.weixin.qq.com/s/lphythZhxUxi1TQiFT6Hpg)
-* [前端必学必会-多媒体-本地存储-浏览器与服务器的交互-通信功能](https://mp.weixin.qq.com/s/cTsaN9kbu9qHk_weaPKkoQ)
-* [记录一次BAT一线互联网公司前端JavaScript面试](https://mp.weixin.qq.com/s/WEiCs4Vlqz5FfkIngOjJzA)
-* [学习总结之HTML5剑指前端-上（建议收藏，图文并茂）](https://mp.weixin.qq.com/s/qsvN-nq5h2DedgWOJTr6eA)
+* [考前复习必备MySQL数据库（关系型数据库管理系统）](https://juejin.im/post/5e4f7ccdf265da574a1ead44)
+* [长篇总结之JavaScript，巩固前端基础](https://juejin.im/post/5e53d96e51882548ff3a972c)
+* [前端必学必会-多媒体-本地存储-浏览器与服务器的交互-通信功能](https://juejin.im/post/5e626c07f265da5749475408)
+* [记录一次BAT一线互联网公司前端JavaScript面试](https://juejin.im/post/5e64ed08f265da572d12cc4e)
+* [学习总结之HTML5剑指前端（建议收藏，图文并茂）](https://juejin.im/post/5e5bc764518825494466ad66)
+* [【思维导图】前端开发-巩固你的JavaScript知识体系](https://juejin.im/post/5e8089dde51d4546d72d2099)
+* [前端面试必备ES6全方位总结](https://juejin.im/post/5e480441518825495371f5c7)
+
+
 
 
 ## 如何支持：
