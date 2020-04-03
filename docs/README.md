@@ -4,7 +4,7 @@
 
 > 这里是 达达前端 的博客, 囊括前端Vue、JavaScript、数据结构与算法、实战演练、Node全栈一线技术，紧跟业界发展步伐，一个热爱前端的达达程序员。
 
-<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=f0931ozcj4u" allowFullScreen="true" height=500></iframe>
+<!-- <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=f0931ozcj4u" allowFullScreen="true" height=500></iframe> -->
 
 努力打造一系列适合初中级工程师能够看得懂的优质文章，今年博客侧重于vue、node和webpack等底层原理分析，如果想第一时间获取文章，欢迎关注我的公众号：达达前端，接下去的路我们一起走！
 
