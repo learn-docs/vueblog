@@ -8,8 +8,7 @@
 * [学习总结之HTML5剑指前端（建议收藏，图文并茂）](https://juejin.im/post/5e5bc764518825494466ad66)
 * [【思维导图】前端开发-巩固你的JavaScript知识体系](https://juejin.im/post/5e8089dde51d4546d72d2099)
 * [前端面试必备ES6全方位总结](https://juejin.im/post/5e480441518825495371f5c7)
-
-
+* [【图文并茂，点赞收藏哦！】重学巩固你的Vuejs知识体系](https://juejin.im/post/5e6e2a5a5188254974680f6a)
 
 
 ## 如何支持：
