@@ -1,30 +1,70 @@
 const User = {
-	computed: {
-		username() {
-			console.log(this.$route)
-			return this.$route.params.username
-		}
-	},
-	watch: {
-		'$route'(to,from) {
-			console.log('to', to)
-			console.log('from', from)
-		}
-	},
-	beforeRouteUpdate(to, from, next) {
-		console.log('--',to, from, next)
-		next()
-	},
-	template: '<div>User: {{username}} - id: {{$route.params.id}}</div>'
+  template: `
+    <div class="user">
+		<h1>User</h1>
+		<div>
+			<router-link to="/1"">1001</router-link>
+			<router-link to="/2">1002</router-link>
+		</div>
+		<router-view></router-view>
+    </div>
+  `
+}
+
+const UserDetails = {
+	template: `
+	  <div class="user">
+		<h2>Detail{{$route.params.id}}</h2>
+		<div>
+		<router-link to="/profile">profile</router-link>
+		<router-link to="/posts">posts</router-link>
+		</div>
+	    <router-view></router-view>
+	  </div>
+	`
+}
+
+const UserProfile = {
+  template: `
+    <div class="user">
+      <h2>UserProfile{{$route.params.id}}</h2>
+      <router-view></router-view>
+    </div>
+  `
+}
+
+const UserPosts = {
+  template: `
+    <div class="user">
+      <h2>UserPosts{{$route.params.id}}</h2>
+      <router-view></router-view>
+    </div>
+  `
 }
 
 const router = new VueRouter({
-	routes: [
-		{path: '/user/:username/:id', component: User}
-	]
+  routes: [
+    { path: '', component: User,
+      children: [
+		  {
+			  path: ':id',
+			  component: UserDetails,
+			  children: [
+			    {
+			      path: '/profile',
+			      component: UserProfile
+			    },
+			    {
+			      path: '/posts',
+			      component: UserPosts
+			    }
+			  ]
+		  }
+	  ]
+    }
+  ]
 })
 
-new Vue({
-	el: '#app',
-	router,
-})
+const app = new Vue({
+	router
+}).$mount('#app')
