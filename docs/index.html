@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页 | Jeskson-达达前端</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="keywords" content="Jeskson, 达达前端,前端Vue,全栈技术,博客,前端开发" />
+  <meta name="description" content="囊括前端Vue、JavaScript、数据结构与算法、实战演练、Node全栈一线技术，紧跟业界发展步伐，一个热爱前端的达达程序员。">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  <link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
+  <script src="//unpkg.com/docsify"></script>
+  <style>
+      .app-nav.custom_nav {
+        position: fixed;
+        padding: 25px 60px 0 0;
+        margin: 0;
+      }
+  
+      .custom_nav.active {
+        width: calc(100% - 300px);
+        background-color: #fff;
+        height: 64px;
+        /* border-bottom: 1px solid #eee; */
+      }
+  
+      .aside_container {
+        position: relative;
+      }
+  
+      .advertisement {
+        position: fixed;
+        right: 20px;
+        top: 100px;
+        width: 150px;
+        box-shadow: -1px 0 2px 0px #c5ebda;
+        padding: 10px;
+        z-index: 99;
+        background-color: #fff;
+        text-align: center;
+      }
+  
+      .advertisement p,
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+  
+      .advertisement .Tencent_code h4 {
+        font-size: 15px;
+        color: #25a46a;
+        margin-bottom: 10px;
+      }
+  
+      .advertisement .personal_code {
+        margin-top: 20px;
+      }
+  
+      .advertisement .personal_code h4 {
+        font-size: 15px;
+        color: #25a46a;
+        margin-bottom: 10px;
+      }
+  
+      .advertisement .close_code {
+        display: none;
+        position: absolute;
+        left: -8px;
+        top: -8px;
+      }
+  
+      .advertisement .close_code img {
+        width: 18px;
+      }
+  
+      .open_code {
+        position: fixed;
+        right: -5px;
+        top: 250px;
+        display: none;
+      }
+  
+      .markdown-section {
+        margin: 0 5% !important;
+      }
+  
+      @media screen and (max-width: 600px) {
+        .advertisement .close_code {
+          display: block;
+        }
+  
+        .custom_nav {
+          display: none;
+        }
+  
+        .markdown-section {
+          margin: 0 0% !important;
+        }
+  
+        .sidebar {
+          width: 190px;
+        }
+  
+        body.close .content {
+          transform: translateX(190px);
+        }
+      }
+  
+      @media only screen and (min-width: 600px) {
+        .sidebar-toggle {
+          display: none;
+        }
+      }
+  
+      /* 覆盖样式 */
+      /* github图标链接 */
+      .github-corner {
+        z-index: 3;
+      }
+  
+      .app-sub-sidebar li:before {
+        content: "☆";
+      }
+  
+      .sidebar-nav>ul>li>ul>li {
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <!-- <h1 style="color: transparent; height: 0; padding:0; margin:0">达达前端</h1> -->
+    <!-- 通过配置文件自定义导航 -->
+    <nav class="custom_nav active">
+      <a href="#/">主页</a>
+      <a href="#/前端交流/path">前端交流</a>
+      <a href="#/吊打前端专栏/path">吊打前端专栏</a>
+      <a href="#/魔王哪吒/path">魔王哪吒</a>
+      <a href="#/关于我">关于我</a>
+    </nav>
+    <div id="app">
+      <img src="./_media/loading.gif" alt="达达前端" />
+    </div>
+    <div class="aside_container">
+      <div class="advertisement">
+        <div class="Tencent_code">
+          <h4>关注作者公众号</h4>
+          <p style="font-size: 12px;">达达前端陪伴你的365天</p>
+          <!-- <img src="./_media/public_code.jpg" alt="达达前端" /> -->
+          <img src="https://cdn.jsdelivr.net/gh/webVueBlog/dadapic/img/public_code.jpg" alt="达达前端" />
+        </div>
+        <div class="personal_code">
+          <h4>加群前端交流群</h4>
+          <p style="font-size: 12px;">扫码,备注<em style="font-style: normal; color: #25a46a;font-weight: bold"> 加群-技术领域-城市-姓名
+            </em>,拉你入群一起学习，否则不通过</p>
+          <!-- <img src="./_media/dada_code.jpg" alt="达达前端" /> -->
+          <img src="https://cdn.jsdelivr.net/gh/webVueBlog/dadapic/img/dada_code.jpg" alt="达达前端" />
+        </div>
+        <div class="close_code">
+          <img src="./_media/close.png" alt="达达前端" class="close" />
+        </div>
+      </div>
+      <div class="open_code">
+        <img src="./_media/right@2x.png" alt="达达前端" />
+      </div>
+    </div>
+
+    <script>
+      var _mtac = {};
+      (function () {
+        var mta = document.createElement("script");
+        mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500696124");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+      })();
+    </script>
+    <script>
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
+      }
+    </script>
+  
+    <script>
+      var closeBtn = document.querySelector('.close_code');
+      var openBtn = document.querySelector('.open_code');
+      var advertisement = document.querySelector('.advertisement')
+      closeBtn.addEventListener('click', function () {
+        openBtn.style.display = 'block';
+        advertisement.style.display = "none"
+      })
+      openBtn.addEventListener('click', function () {
+        openBtn.style.display = 'none';
+        advertisement.style.display = "block"
+      })
+    </script>
+
+    <script>
+      // 留言plugin config
+      // var gitalkOption = {
+      //   clientID: 'f7767ef8db9a46361911',
+      //   clientSecret: '2cd7f686d51a8713c87533b6b389f5016bcc26aa',
+      //   repo: 'vueblog',
+      //   owner: 'webVueBlog',
+      //   admin: ['webVueBlog'],
+      //   distractionFreeMode: false
+      // }
+      window.$docsify = {
+        // logo: '/_media/gen.svg', // 在侧边栏中出现的网站图标
+        name: '达达前端', // 侧边导航名字
+        repo: 'https://github.com/huangguangda',
+        mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏。
+        executeScript: true, // 执行文档里的 sc ript 标签里的脚本
+        auto2top: true,
+        loadSidebar: true, // 自定义侧边目录
+        loadSidebar: '_sidebar.md', //侧边目录
+        subMaxLevel: 2, // 导航最大层级
+        auto2top: true, // 切换页面后自动跳转到页面顶部
+        coverpage: true, // 封面
+        themeColor: "#42b983",
+        darkMode: {
+        dark: {
+          background: "#1c2022",
+          toggleBtnBg: "#34495e",
+          textColor: "#b4b4b4"
+          },
+          light: {
+            background: "white",
+            toggleBtnBg: "var(--theme-color)",
+            textColor: "var(--theme-color)"
+          }
+        },
+        search: {
+          paths: 'auto',
+          placeholder: '🔍 输入搜索...',
+          noData: '😞 暂时无搜索结果...',
+          depth: 6
+        },
+        pagination: {
+          previousText: 'PREVIOUS',
+          nextText: 'NEXT',
+          crossChapter: true
+        },
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        plugins: [
+          function (hook, vm) {
+            hook.beforeEach(function (html) {
+            if (/githubusercontent\.com/.test(vm.route.file)) {
+              url = vm.route.file
+                .replace('raw.githubusercontent.com', 'github.com')
+                .replace(/\/master/, '/blob/master')
+            } else {
+              url = 'https://github.com/webVueBlog/vueblog/tree/master/docs/' + vm.route.file
+            }
+            var editHtml = '[:memo: Edit Document](' + url + ')\n'
+
+            return editHtml
+              + html
+              + '\n\n----\n\n'
+              + '<a href="https://github.com/webVueBlog/interview-answe" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">前端面试日更解答 interview-answe 1+1</a>'
+          })
+  
+  
+          }
+        ]
+        //   }
+        // ]
+        // plugins: [
+        //   function (hook, vm) {
+        //     gitalk = new Gitalk(gitalkOption)
+  
+        //     gitalk.render("gitalk-container-");
+        //   }
+        // ]
+      }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+    <script>
+        const gitalk = new Gitalk({
+          clientID: 'f7767ef8db9a46361911',
+          clientSecret: '2cd7f686d51a8713c87533b6b389f5016bcc26aa',
+          repo: 'vueblog',
+          owner: 'webVueBlog',
+          admin: ['webVueBlog'],
+          distractionFreeMode: false
+        })
+    </script>
+    <!-- 项目本地运行:  docsify serve docs -->
+</body>
+</html>
