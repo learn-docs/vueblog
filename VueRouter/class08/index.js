@@ -1,4 +1,3 @@
-	
 const MainMenu = {
 	template:`,
 		<router-link to="/">Home</router-link>
@@ -55,7 +54,6 @@ const router = new VueRouter({
 		},
 	]
 })
-
 new Vue({
 	el: '#app',
 	router,
