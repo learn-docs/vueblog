@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>VueRouter</title>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+		<style>
+			.fade-enter-active, .fade-leave-active {
+			  transition: opacity .5s;
+			}
+			.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+			  opacity: 0;
+			}
+			
+			.move-enter-active, .move-leave-active {
+				transition: all .5s;
+			}
+			.move-enter{
+				transform: translateX(-100px);
+			}
+			.move-enter-to{
+				transform: translateX(0);
+			}
+			.move-leave-to{
+				transform: translateX(-1000px);
+			}
+			.foo,.bar{
+				position: absolute;
+				top: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="app">
+		  <transition name="move">
+		    <router-view></router-view>
+		  </transition>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>

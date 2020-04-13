@@ -1,4 +1,14 @@
 
+
+const Foo = {
+	template: `
+	<div>
+	 <h1>Foo</h1>
+	 <router-view></router-view>
+	</div>
+	`
+}
+
 const router = new VueRouter({
 	routes: [
 		{
