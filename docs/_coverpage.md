@@ -11,7 +11,6 @@
 * 囊括前端Vue、JavaScript、数据结构与算法、实战演练、Node全栈一线技术，紧跟业界发展步伐，一个热爱前端的达达程序员。
 
 [CSDN](https://blog.csdn.net/qq_36232611)
-[魔王哪吒](https://juejin.im/user/5e477d7ce51d4526c550a27d)
 [思否](https://segmentfault.com/u/dashucoding)
 [简书](https://www.jianshu.com/u/c785ece603d1)
 [云+社区](https://cloud.tencent.com/developer/user/1435798)
