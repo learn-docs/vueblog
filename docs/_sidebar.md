@@ -13,6 +13,7 @@
     * [markdown](/技术文档写作规范/markdown.md)
 
 * 掘金
+	* [13期前端冲刺必备指南-this/call/apply/bind（万字长文）](/掘金/13期前端冲刺必备指南-this-call-apply-bind（万字长文）.md)
 	* [12期前端冲刺必备指南-HTTP/HTTPS/HTTP2/DNS/TCP/经典题](/掘金/12期前端冲刺必备指南-HTTP-HTTPS-HTTP2-DNS-TCP-经典题.md)
 	* [11期前端冲刺必备指南-执行上下文作用域链闭包一等公民](/掘金/11期前端冲刺必备指南-执行上下文作用域链闭包一等公民.md)
 	* [【高能笔记】如何获得令人心动的前端offer](/掘金/【高能笔记】如何获得令人心动的前端offer.md)
