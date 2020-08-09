@@ -7,3 +7,4 @@ runtime
 .env
 .DS_Store
 ./VueRouter/class09/package-lock.json
+./VueRouter/class09/package.json
