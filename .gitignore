@@ -1,0 +1,9 @@
+/.idea
+/.vscode
+/vendor
+*.log
+thinkphp
+runtime
+.env
+.DS_Store
+./VueRouter/class09/package-lock.json
