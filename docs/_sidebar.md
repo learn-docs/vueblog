@@ -13,8 +13,8 @@
     * [markdown](/技术文档写作规范/markdown.md)
 
 * 掘金
-	* [一熟练HTML5+CSS3，每天复习一遍](一熟练HTML5+CSS3，每天复习一遍.md)
-	* [【思维导图】前端开发JavaScript-巩固你的JavaScript知识体系](【思维导图】前端开发JavaScript-巩固你的JavaScript知识体系.md) 
+	* [一熟练HTML5+CSS3每天复习一遍](/掘金/一熟练HTML5+CSS3每天复习一遍.md)
+	* [【思维导图】前端开发JavaScript-巩固你的JavaScript知识体系](/掘金/【思维导图】前端开发JavaScript-巩固你的JavaScript知识体系.md) 
 	* [【图文并茂，点赞收藏哦！】重学巩固你的Vuejs知识体系下](/掘金/【图文并茂，点赞收藏哦！】重学巩固你的Vuejs知识体系下.md)
 	* [【图文并茂，点赞收藏哦！】重学巩固你的Vuejs知识体系上](/掘金/【图文并茂，点赞收藏哦！】重学巩固你的Vuejs知识体系上.md) 
 	* [写给前端程序员的英文学习指南](/掘金/写给前端程序员的英文学习指南.md) 
