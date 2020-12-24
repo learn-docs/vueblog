@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "获取附近的动态，点聚合",
+  "usingComponents": {
+    "active-map": "/components/activeMap"
+  }
+}

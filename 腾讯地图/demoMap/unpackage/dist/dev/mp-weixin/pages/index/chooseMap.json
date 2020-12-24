@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "地图地址搜索chooseLocation",
+  "usingComponents": {
+    "choose-map": "/components/chooseMap"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "定位附近门店",
+  "usingComponents": {
+    "da-position": "/components/da-position/da-position"
+  }
+}

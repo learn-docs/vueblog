@@ -1,0 +1,46 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "地图组件demo"
+			}
+		},
+		{
+			"path": "pages/index/chooseMap",
+			"style": {
+				"navigationBarTitleText": "地图地址搜索chooseLocation"
+			}
+		},
+		{
+			"path": "pages/index/activeMap",
+			"style": {
+				"navigationBarTitleText": "获取附近的动态，点聚合"
+			}
+		},
+		{
+			"path": "pages/index/peopleMap",
+			"style": {
+				"navigationBarTitleText": "地图上标注附近的人"
+			}
+		},
+		{
+			"path": "pages/index/shopMap",
+			"style": {
+				"navigationBarTitleText": "定位附近门店"
+			}
+		},
+		{
+			"path": "pages/index/baseMap",
+			"style": {
+				"navigationBarTitleText": "baseMap"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "腾讯地图应用开发",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
