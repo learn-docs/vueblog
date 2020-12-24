@@ -48,6 +48,42 @@
 					<text class='text-grey'>定位附近门店</text>
 				</view>
 			</navigator>
+			<navigator url="./txMap" class="cu-item arrow">
+				<view class='content'>
+					<text class='cuIcon-locationfill text-green'></text>
+					<text class='text-grey'>调用腾讯地图接口</text>
+				</view>
+			</navigator>
+			<navigator url="./reverseMap" class="cu-item arrow">
+				<view class='content'>
+					<text class='cuIcon-locationfill text-green'></text>
+					<text class='text-grey'>reverseGeocoder逆地址解析</text>
+				</view>
+			</navigator>
+			<navigator url="./geocoderMap" class="cu-item arrow">
+				<view class='content'>
+					<text class='cuIcon-locationfill text-green'></text>
+					<text class='text-grey'>geocoder地址解析</text>
+				</view>
+			</navigator>
+			<navigator url="./calculateDistanceMap" class="cu-item arrow">
+				<view class='content'>
+					<text class='cuIcon-locationfill text-green'></text>
+					<text class='text-grey'>距离计算</text>
+				</view>
+			</navigator>
+			<navigator url="./getCityListMap" class="cu-item arrow">
+				<view class='content'>
+					<text class='cuIcon-locationfill text-green'></text>
+					<text class='text-grey'>获取城市列表</text>
+				</view>
+			</navigator>
+			<navigator url="./getDistrictByCityIdMap" class="cu-item arrow">
+				<view class='content'>
+					<text class='cuIcon-locationfill text-green'></text>
+					<text class='text-grey'>获取城市区县</text>
+				</view>
+			</navigator>
 		</view>
 		
 	</view>

@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "baseMap",
-  "usingComponents": {
-    "base-map": "/components/baseMap"
-  }
-}

@@ -31,6 +31,42 @@
 			}
 		},
 		{
+			"path": "pages/index/txMap",
+			"style": {
+				"navigationBarTitleText": "调用腾讯地图接口"
+			}
+		},
+		{
+			"path": "pages/index/reverseMap",
+			"style": {
+				"navigationBarTitleText": "逆地址解析"
+			}
+		},
+		{
+			"path": "pages/index/geocoderMap",
+			"style": {
+				"navigationBarTitleText": "地址解析"
+			}
+		},
+		{
+			"path": "pages/index/calculateDistanceMap",
+			"style": {
+				"navigationBarTitleText": "距离计算"
+			}
+		},
+		{
+			"path": "pages/index/getCityListMap",
+			"style": {
+				"navigationBarTitleText": "获取城市列表"
+			}
+		},
+		{
+			"path": "pages/index/getDistrictByCityIdMap",
+			"style": {
+				"navigationBarTitleText": "获取城市区县"
+			}
+		},
+		{
 			"path": "pages/index/baseMap",
 			"style": {
 				"navigationBarTitleText": "baseMap"

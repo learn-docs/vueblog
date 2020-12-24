@@ -1,19 +1,14 @@
 <template>
 	<view>
-		<test v-if="flag"></test>
-		<button type="primary" @click="checkTest">切换test组件</button>
 	</view>
 </template>
 
 <script>
-	// import test from '../../components/test.vue'
 	export default {
 		components: {
-			test,
 		},
 		data() {
 			return {
-				flag: true,
 			}
 		},
 		onLoad() {
@@ -25,13 +20,11 @@
 		onReady() {
 			console.log('页面初次渲染完成了')
 		},
+		methods: {
+			
+		},
 		onHide() {
 			console.log('页面隐藏了')
-		},
-		methods: {
-			checkTest() {
-				this.flag = !this.flag
-			}
 		},
 	}
 </script>

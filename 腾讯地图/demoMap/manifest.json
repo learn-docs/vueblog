@@ -1,6 +1,6 @@
 {
     "name" : "demoMap",
-    "appid" : "__UNI__2747004",
+    "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wx63c9d2812386c12e",
+        "appid" : "",
         "setting" : {
             "urlCheck" : false,
             "minified" : false
