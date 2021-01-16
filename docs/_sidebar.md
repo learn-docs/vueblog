@@ -101,6 +101,9 @@
 * Node实战与解析
     * [Node要领](/Node实战与解析/Node要领.md)
 
+* Java
+    * [【2021年】小哪吒入门学习Java的第一天打卡](/Java/【2021年】小哪吒入门学习Java的第一天打卡.md)
+
 * Tools
 	* [Tools](Tools/Tools.md)
 
