@@ -13,6 +13,9 @@
     * [markdown](/技术文档写作规范/markdown.md)
 
 * 掘金
+	* [【初级】个人分享Vue前端开发教程笔记](/掘金/【初级】个人分享Vue前端开发教程笔记.md)
+	* [localStorage和sessionStorage本地存储](/掘金/localStorage和sessionStorage本地存储.md) 
+	* [HTML5中的拖放功能](/掘金/HTML5中的拖放功能.md)
 	* [挑战前端知识点HTTP-ECMAScript](/掘金/挑战前端知识点HTTP-ECMAScript.md)
 	* [前端HTML5面试官和应试者一问一答](/掘金/前端HTML5面试官和应试者一问一答.md)
 	* [必学必会-音频和视频](/掘金/必学必会-音频和视频.md) 
