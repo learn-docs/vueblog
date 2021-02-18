@@ -13,6 +13,7 @@
     * [markdown](/技术文档写作规范/markdown.md)
 
 * 掘金
+	* [这是我的第一次JavaScript初级技巧](/掘金/这是我的第一次JavaScript初级技巧.md)
 	* [一个合格的初级前端工程师需要掌握的模块笔记](/掘金/一个合格的初级前端工程师需要掌握的模块笔记.md)
 	* [【初级】个人分享Vue前端开发教程笔记](/掘金/【初级】个人分享Vue前端开发教程笔记.md)
 	* [localStorage和sessionStorage本地存储](/掘金/localStorage和sessionStorage本地存储.md) 
