@@ -13,7 +13,7 @@
     * [markdown](/技术文档写作规范/markdown.md)
 
 * 📚力扣 (LeetCode)题目
-	* [力扣 (LeetCode)-两数之和,有效的括号,两数相加]((/掘金/两数之和,有效的括号,两数相加.md)
+	* [力扣 (LeetCode)-两数之和,有效的括号,两数相加](/掘金/两数之和,有效的括号,两数相加.md)
 	* [力扣 (LeetCode)-合并两个有序链表,删除排序数组中的重复项,JavaScript笔记](/掘金/合并两个有序链表,删除排序数组中的重复项,JavaScript笔记.md)
 	* [力扣 (LeetCode)-最大子序和,JavaScript数据结构与算法（数组）](/掘金/最大子序和,JavaScript数据结构与算法（数组）.md)
 
