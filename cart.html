@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>监听属性-简单的购物车</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<style type="text/css">
+			table {
+				border: 1px solid black;
+				width: 100%;
+				text-align: center;
+			}
+
+			th {
+				height: 50%;
+			}
+
+			th,
+			td {
+				border-bottom: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<!-- 定义购物车表 -->
+			<table>
+				<!-- 标题部分 -->
+				<tr>
+					<th>序号</th>
+					<th>商品名称</th>
+					<th>商品价格</th>
+					<th>购买数量</th>
+					<th>操作</th>
+				</tr>
+				<!-- shoujiarr -->
+				<tr v-for="item in shoujiarr">
+					<td>{{item.id}}</td>
+					<td>{{item.mingcheng}}</td>
+					<td>{{item.jiage}}</td>
+					<td>
+						<!-- 每次点击数量减一 -->
+						<button @click="item.shuliang=item.shuliang-1"> - </button>
+						{{item.shuliang}}
+						<button @click="item.shuliang=item.shuliang+1"> + </button>
+					</td>
+					<td>
+						<button @click="item.shuliang=0">清0</button>
+					</td>
+				</tr>
+			</table>
+			<div>总价：{{totalMoney()}}</div>
+		</div>
+		<script>
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					shoujiarr: [{
+							id: 1,
+							mingcheng: "iphone 6",
+							jiage: 1000,
+							shuliang: 1
+						},
+						{
+							id: 2,
+							mingcheng: "iphone 7",
+							jiage: 2000,
+							shuliang: 1
+						}
+					]
+				},
+				methods: {
+					totalMoney() {
+						var money = 0; // 初始化
+						for (var x = 0; x < this.shoujiarr.length; x++) {
+							money = money + this.shoujiarr[x].jiage * this.shoujiarr[x].shuliang;
+						}
+						return money; // 返回值
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
